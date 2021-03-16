@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style_inddx.css">
+    <script src="index_js.js" defer=""></script>
+    <script src="https://kit.fontawesome.com/83eda6c13e.js" crossorigin="anonymous"></script>
+    <title>Nombre aléatoire</title>
+</head>
+<body>
+    <main>
+        <h1>Découvrez le nombre mystère</h1>
+        <p>Vous avez 7 essaie pour trouver le nombre mystère choisi par l'ordinateur, au hasard entre 1 et 100</p>
+        <div id="contain">
+
+            <div id="contain-button">
+                <input type="button" value="Nouveau jeux" id="newGame" title="Commencez ici">
+                <input type="button" value="Solution" id="solution" title="Affichez la solution ici">
+                <input type="button" value="Proposer" id="Propose" title="Send your answer">
+            </div>
+            
+            <fieldset>
+                <!--<i class="fas fa-stopwatch-20 fa-3x" ></i>-->                
+                <div id="contain-input">
+                    <label for="proposition">Proposition :</label>
+                    <input type="text" id="proposition" name="" onfocus="this.value = ''" value="" >
+
+                    <label for="NbrEssaie">Nbr Essaie :</label>
+                    <input type="text" id="NbrEssaie" name="" readonly>
+
+                    <label for="message">Message :</label>
+                    <input type="text" id="message" name="" readonly>
+
+                    <label for="reponses">Réponses :</label>
+                    <input type="text" id="reponses" name="" readonly>
+                </div>
+
+                <div id="count_icon">
+                    <span id="counter" ></span>
+                    <i class="far fa-angry fa-3x" id="rotate" class="rotating" ></i>
+                    <i class="fas fa-smile-beam fa-3x" id="rotate_good" class="rotating"></i>
+                </div>
+                
+            </fieldset>
+            <span id="Show_solution"></span>
+        </div>
+        
+    </main>
+    
+</body>
+</html>

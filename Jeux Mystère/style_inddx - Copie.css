@@ -1,0 +1,104 @@
+body{
+    width: 100%;
+    margin: 0px;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+    
+}
+h1,p{
+    text-align: center;
+}
+
+#contain-button{
+    width: 75%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+fieldset{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+}
+
+#rotate{
+    /*position: absolute;
+    left: 630px;
+    top: 265px;*/
+    animation: rotating 2s linear infinite;
+    /*transform: rotate(360deg);
+    transition: transform 1s;*/
+    opacity: 0%;
+}
+
+#rotate_good{
+    /*position: absolute;
+    left: 630px;
+    top: 265px;*/
+    animation: rotating 2s linear infinite;
+    opacity: 0%;
+}
+
+#Show_solution{
+    margin: auto;
+}
+
+#proposition , #message{
+    width: 50%;
+}
+
+#NbrEssaie{
+    width: 35%;
+}
+
+#reponses{
+    width: 60%;
+}
+
+#counter{
+    width: 60px;
+    margin-bottom: 35px;
+    text-shadow: black 3.5px 2px 2px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#contain-input{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:baseline;
+}
+
+#count_icon{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@keyframes rotating{
+
+    from {
+        transform: rotate(0deg);
+    }
+      to {
+        transform: rotate(360deg);
+    }
+    
+}
+.rotating {
+    animation: rotating 2s linear infinite;
+}
